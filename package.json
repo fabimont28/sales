@@ -4,7 +4,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "prettier . --write && next lint"
+    "lint": "prettier . --write && next lint",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@supabase/ssr": "latest",
@@ -27,5 +28,8 @@
     "eslint-config-prettier": "^9.1.0",
     "prettier": "3.3.2",
     "prettier-plugin-tailwindcss": "^0.6.5"
+  },
+  "lint-staged": {
+    "*.{js,css,md}": "prettier --write"
   }
 }
