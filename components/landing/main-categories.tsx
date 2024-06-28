@@ -6,7 +6,7 @@ import { Button } from '../ui/button'
 
 export function MainCategories() {
   return (
-    <div className='flex gap-4'>
+    <div className='flex gap-4 text-stone-700/90'>
       <Button
         variant='outline'
         className='rounded-2xl border-gray-300 bg-transparent px-3 py-2'
