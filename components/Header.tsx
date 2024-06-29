@@ -1,11 +1,11 @@
 import Link from 'next/link'
-import { Search } from './Search'
+import { Search } from './search'
 import { ShopCartIcon } from './icons/shop-cart'
 import { Button } from './ui/button'
 
 export default function Header() {
   return (
-    <header className='flex w-full items-center justify-between border-b border-gray-300/60 px-16 py-6 text-sm'>
+    <header className='flex w-full items-center justify-between border-b border-gray-300/60 py-6 text-sm'>
       <nav className='flex items-center gap-8'>
         <h1 className='font-bold'>
           <Link href='/'>Inicio</Link>
