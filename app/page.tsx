@@ -1,13 +1,13 @@
 import Header from '@/components/Header'
 import { Hero } from '@/components/landing/Hero'
-import { Marquee } from '@/components/landing/Marquee'
+import { TextOffers } from '@/components/landing/text-offers'
 
 export default async function Index() {
   return (
-    <div className=''>
+    <div>
       <Header />
       <Hero />
-      <Marquee />
+      <TextOffers />
     </div>
   )
 }
