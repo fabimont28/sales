@@ -3,6 +3,8 @@ import { Container } from '@/components/container'
 import { Hero } from '@/components/landing/Hero'
 import { FeaturedProducts } from '@/components/landing/featured-products'
 import { TextOffers } from '@/components/landing/text-offers'
+import { TrendingProducts } from '@/components/landing/trending-products'
+import { Separator } from '@/components/ui/separator'
 
 export default async function Index() {
   return (
@@ -18,6 +20,8 @@ export default async function Index() {
       <TextOffers />
       <Container>
         <FeaturedProducts />
+        <Separator />
+        <TrendingProducts />
       </Container>
     </>
   )
