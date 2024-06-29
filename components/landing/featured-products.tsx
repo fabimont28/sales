@@ -4,7 +4,7 @@ import { BentoGrid, BentoGridItem } from '../ui/bento-grid'
 export function FeaturedProducts() {
   return (
     <section>
-      <h2 className='my-12 mb-4 text-4xl font-bold'>Productos destacados</h2>
+      <h2 className='my-12 mb-4 text-lg font-bold'>Productos destacados</h2>
       <BentoGrid className='w-full'>
         {items.map((item, i) => (
           <BentoGridItem
