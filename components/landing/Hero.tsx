@@ -5,8 +5,8 @@ import { OffersIcon } from '../icons/offers'
 
 export function Hero() {
   return (
-    <section className='min-h-[630px] w-full bg-gradient-to-r from-gray-100 via-stone-100 to-blue-100'>
-      <div className='flex justify-around px-16 py-24'>
+    <section className='min-h-[630px] w-full'>
+      <div className='flex justify-around py-24'>
         <div className='flex flex-col'>
           <div>
             <h1 className='text-balance text-6xl font-bold text-gray-800'>
