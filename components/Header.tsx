@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Search } from './search'
+import { Search } from './search-input'
 import { ShopCartIcon } from './icons/shop-cart'
 import { Button } from './ui/button'
 
