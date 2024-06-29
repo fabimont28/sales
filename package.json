@@ -8,12 +8,14 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@radix-ui/react-separator": "^1.1.0",
     "@radix-ui/react-slot": "^1.1.0",
     "@supabase/ssr": "latest",
     "@supabase/supabase-js": "latest",
     "autoprefixer": "10.4.17",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
+    "embla-carousel-react": "^8.1.5",
     "framer-motion": "^11.2.12",
     "geist": "^1.2.1",
     "lucide-react": "^0.397.0",
