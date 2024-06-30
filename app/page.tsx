@@ -12,7 +12,7 @@ export default async function Index() {
       <Container>
         <Header />
       </Container>
-      <div className='bg-gradient-to-r from-gray-100 via-stone-100 to-blue-100'>
+      <div className='bg-gradient-to-r from-white to-slate-200'>
         <Container>
           <Hero />
         </Container>
@@ -21,12 +21,14 @@ export default async function Index() {
       <Container>
         <FeaturedProducts />
       </Container>
-      <div className='my-8'>
+      <div className=''>
         <DiscountBanner />
       </div>
-      <Container>
-        <TrendingProducts />
-      </Container>
+      <div className='bg-gradient-to-r from-white to-slate-200'>
+        <Container>
+          <TrendingProducts />
+        </Container>
+      </div>
     </>
   )
 }

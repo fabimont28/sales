@@ -3,8 +3,8 @@ import { BentoGrid, BentoGridItem } from '../ui/bento-grid'
 
 export function FeaturedProducts() {
   return (
-    <section>
-      <h2 className='my-12 mb-4 text-lg font-bold'>Productos destacados</h2>
+    <section className='py-10'>
+      <h2 className='mb-4 text-lg font-bold'>Productos destacados</h2>
       <BentoGrid className='w-full'>
         {items.map((item, i) => (
           <BentoGridItem
@@ -46,16 +46,6 @@ const items = [
   {
     title: 'The Pursuit of Knowledge',
     description: 'Join the quest for understanding and enlightenment.',
-    header: <Skeleton />,
-  },
-  {
-    title: 'The Joy of Creation',
-    description: 'Experience the thrill of bringing ideas to life.',
-    header: <Skeleton />,
-  },
-  {
-    title: 'The Spirit of Adventure',
-    description: 'Embark on exciting journeys and thrilling discoveries.',
     header: <Skeleton />,
   },
 ]
