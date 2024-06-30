@@ -10,11 +10,17 @@ export function TextOffers() {
         speed={40}
       >
         <p className='mx-6 inline-flex py-6 text-xl font-bold uppercase'>Black Friday</p>
-        <p className='mx-6 inline-flex py-6 text-xl font-bold uppercase'>Hasta 70% de DESCUENTO</p>
+        <p className='mx-6 inline-flex py-6 text-xl font-bold uppercase text-stone-700'>
+          Hasta 70% de DESCUENTO
+        </p>
         <p className='mx-6 inline-flex py-6 text-xl font-bold uppercase'>Black Friday</p>
-        <p className='mx-6 inline-flex py-6 text-xl font-bold uppercase'>Hasta 70% de DESCUENTO</p>
+        <p className='mx-6 inline-flex py-6 text-xl font-bold uppercase text-stone-700'>
+          Hasta 70% de DESCUENTO
+        </p>
         <p className='mx-6 inline-flex py-6 text-xl font-bold uppercase'>Black Friday</p>
-        <p className='mx-6 inline-flex py-6 text-xl font-bold uppercase'>Hasta 70% de DESCUENTO</p>
+        <p className='mx-6 inline-flex py-6 text-xl font-bold uppercase text-stone-700'>
+          Hasta 70% de DESCUENTO
+        </p>
       </Marquee>
     </section>
   )

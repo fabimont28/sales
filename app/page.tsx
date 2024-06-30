@@ -1,10 +1,10 @@
 import Header from '@/components/Header'
 import { Container } from '@/components/container'
 import { Hero } from '@/components/landing/Hero'
+import { DiscountBanner } from '@/components/landing/discount-banner'
 import { FeaturedProducts } from '@/components/landing/featured-products'
 import { TextOffers } from '@/components/landing/text-offers'
 import { TrendingProducts } from '@/components/landing/trending-products'
-import { Separator } from '@/components/ui/separator'
 
 export default async function Index() {
   return (
@@ -20,7 +20,11 @@ export default async function Index() {
       <TextOffers />
       <Container>
         <FeaturedProducts />
-        <Separator />
+      </Container>
+      <div className='my-8'>
+        <DiscountBanner />
+      </div>
+      <Container>
         <TrendingProducts />
       </Container>
     </>
