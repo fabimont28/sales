@@ -9,8 +9,8 @@ import {
 
 export function TrendingProducts() {
   return (
-    <section className='my-12 w-full'>
-      <h2 className='my-4 text-lg font-bold'>Productos populares</h2>
+    <section className='w-full py-10'>
+      <h2 className='mb-4 text-lg font-bold'>Productos populares</h2>
       <Carousel className='w-full'>
         <CarouselContent className='-ml-1'>
           {Array.from({ length: 5 }).map((_, index) => (
