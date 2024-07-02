@@ -1,4 +1,5 @@
-import React from 'react'
+import { cn } from '@/lib/utils'
+import Image from 'next/image'
 import { BentoGrid, BentoGridItem } from '../ui/bento-grid'
 
 export function FeaturedProducts() {
@@ -9,43 +10,83 @@ export function FeaturedProducts() {
         {items.map((item, i) => (
           <BentoGridItem
             key={i}
-            title={item.title}
+            title={item.name}
             description={item.description}
             header={item.header}
-            className={i === 3 || i === 6 ? 'md:col-span-2' : ''}
+            className={cn(i === 3 || i === 6 ? 'md:col-span-2' : '', 'border border-stone-300')}
           />
         ))}
       </BentoGrid>
     </section>
   )
 }
-const Skeleton = () => (
-  <div className='flex h-full min-h-[6rem] w-full flex-1 rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100 dark:from-neutral-900 dark:to-neutral-800'></div>
-)
+
 const items = [
   {
-    title: 'The Dawn of Innovation',
-    description: 'Explore the birth of groundbreaking ideas and inventions.',
-    header: <Skeleton />,
+    name: 'Beats Solo 4',
+    description: 'Vive la música con la mejor calidad de sonido.',
+    header: (
+      <div className='flex justify-center'>
+        <Image
+          src='/products/1.jpg'
+          alt='Beats Solo 4'
+          width={180}
+          height={180}
+          className='h-auto max-w-full text-center'
+        />
+      </div>
+    ),
   },
   {
-    title: 'The Digital Revolution',
-    description: 'Dive into the transformative power of technology.',
-    header: <Skeleton />,
+    name: 'Samsung Earbuds pro',
+    description: 'Escucha tu música favorita con la mejor calidad de sonido.',
+    header: (
+      <div className='flex justify-center'>
+        <Image
+          src='/products/2.webp'
+          alt='Samsung Earbuds pro'
+          width={180}
+          height={180}
+          className='h-auto max-w-full text-center'
+        />
+      </div>
+    ),
   },
   {
-    title: 'The Art of Design',
-    description: 'Discover the beauty of thoughtful and functional design.',
-    header: <Skeleton />,
+    name: 'Funda de iPhone',
+    description: 'Protege tu iPhone con la mejor calidad de fundas.',
+    header: (
+      <div className='flex justify-center'>
+        <Image
+          src='/products/3.jpeg'
+          alt='Funda de iPhone'
+          width={180}
+          height={180}
+          className='h-auto max-w-full text-center'
+        />
+      </div>
+    ),
   },
   {
-    title: 'The Power of Communication',
+    name: 'Alexa asistente de voz virtual',
     description: 'Understand the impact of effective communication in our lives.',
-    header: <Skeleton />,
+    header: (
+      <div className='flex h-full w-full justify-center rounded-xl bg-[url("/products/alexa.jpg")] bg-cover bg-no-repeat'></div>
+    ),
   },
   {
-    title: 'The Pursuit of Knowledge',
+    name: 'The Pursuit of Knowledge',
     description: 'Join the quest for understanding and enlightenment.',
-    header: <Skeleton />,
+    header: (
+      <div className='flex justify-center'>
+        <Image
+          src='/products/tipo-c.webp'
+          alt='Funda de iPhone'
+          width={180}
+          height={180}
+          className='h-auto max-w-full text-center'
+        />
+      </div>
+    ),
   },
 ]
