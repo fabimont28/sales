@@ -1,6 +1,7 @@
 import Image from 'next/image'
-import { MainCategories } from './main-categories'
+
 import { Button } from '../ui/button'
+import { MainCategories } from './main-categories'
 import { OffersIcon } from '../icons/offers'
 
 export function Hero() {
